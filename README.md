@@ -1,2 +1,2 @@
 # myDotfiles
-my dotfiles on linux
+my dotfiles for Ubuntu linux (mx linux 19)
