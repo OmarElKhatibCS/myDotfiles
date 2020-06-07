@@ -18,5 +18,10 @@ cp ./bash_profile ~/.bash_profile
 cp ./tmux.conf ~/.tmux.conf
 echo "[* Done successfully! :) *]"
 
-
+echo "[* install icons and cursors *]"
+mkdir ~/.icons
+cp -rf ./MaKDE .icons/
+tar -xf we10x_icons.tar
+mkdir ~/.local/share/icons/
+mv -rf We10X-black* ~/.local/share/icons/
 
