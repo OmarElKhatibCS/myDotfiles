@@ -25,4 +25,7 @@ mv -rf ./MaKDE .icons/
 tar -xf we10x_icons.tar
 mkdir ~/.local/share/icons/
 mv -rf We10X-black* ~/.local/share/icons/
+mkdir ~/.themes
+tar -xf theme.tar
+mv -rf Plano-Dark-Modern
 echo "[* All Done , u are ready to go !!!!*]"
