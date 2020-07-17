@@ -13,22 +13,102 @@ alias lal='ls -alh'
 alias la='ls -A'
 
 # Git
-alias gi="git init && gac 'Initial commit'"
+# ----------------------
+# Git Aliases
+# ----------------------
+# add
+alias ga='git add'
+alias gaa='git add --all'
+alias gau='git add --update'
 
-alias gs="git status"
-alias glog='git log --graph --all --decorate'
-alias gac="git add . && git commit -m" # + commit message
+# branch
+alias gb='git checkout'
+alias gbb='git branch --all'
+alias gba='git branch --all'
+alias gbv='git branch -vv'
+alias gbd='git branch --delete '
 
-alias gp="git push" # + remote & branch names
-alias gpo="git push origin" # + branch name
-alias gpom="git push origin master"
+# clone
+alias gcl='git clone'
 
-alias gl="git pull" # + remote & branch names
-alias glo="git pull origin" # + branch name
-alias glom="git pull origin master"
+# commit
+alias gam='git commit --amend'
+alias gcf='git commit --fixup'
 
-alias gb="git branch" # + branch name
-alias gc="git checkout" # + branch name
-alias gcb="git checkout -b" # + branch name
+# checkout
+alias gch='git checkout'
+alias gm='git checkout -'
+alias gchm='git checkout master'
+alias gchs='git checkout staging'
+alias gchd='git checkout develop'
 
-eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+# diff
+alias gd='git diff'
+alias gdh='git diff HEAD'
+alias gdw='git diff --word-diff'
+
+# show
+alias gsh='git show'
+
+# init
+alias gi='git init'
+
+#
+alias gk='gitk&'
+
+# merge
+alias gmm='git merge --no-ff'
+alias gma='git merge --abort'
+alias gmc='git merge --continue'
+
+# pull
+alias gpl='git pull origin'
+alias gpla='git pull --all'
+alias gplr='git pull --rebase'
+
+# push
+alias gp='git push'
+alias gpm='git push origin master'
+alias gpu='git push -u origin master'
+alias gpum='git push -u origin master'
+
+# reflog
+alias gref='git reflog' # show deleted commits
+
+# remote
+alias gv='git remote -v'
+alias grs='git remote set-url origin'
+alias gr='git remote add origin'
+
+# reset
+alias gres0='git reset --soft HEAD^' # reset current commit
+alias gres1='git reset --soft HEAD^1' # reset to the previous commit
+
+# status
+alias gs='git status'
+alias gss='git status --short'
+
+# stash
+alias gsta='git stash apply'
+alias gstd='git stash drop'
+alias gstl='git stash list'
+alias gstp='git stash pop'
+alias gsts='git stash save'
+
+# submodule
+alias gsubi='git submodule init'
+alias gsubu='git submodule update'
+alias gsub='git submodule add'
+
+# switch
+alias gsw='git switch'
+
+# ----------------------
+# full word git aliases
+# ----------------------
+alias ggraph='git log --graph --oneline --decorate --all'
+alias glog='git log --pretty=format:"%h %ad %s" --date=short --all'
+alias glogl='git log --all --grep="$1"'
+alias gshow='git show'
+
+## end of git aliases
