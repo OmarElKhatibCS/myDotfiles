@@ -27,5 +27,5 @@ mkdir ~/.local/share/icons/
 mv -rf We10X-black* ~/.local/share/icons/
 mkdir ~/.themes
 tar -xf theme.tar
-mv -rf Plano-Dark-Modern
+mv -rf Plano-Dark-Modern ~/.themes
 echo "[* All Done , u are ready to go !!!!*]"
